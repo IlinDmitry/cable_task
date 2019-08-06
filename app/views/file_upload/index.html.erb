@@ -1,0 +1,6 @@
+<%= form_tag({action: :upload}, multipart: true) do %>
+  <%= file_field_tag :file, accept: '.csv', required: true %>
+  <br>
+  <br>
+  <%= submit_tag 'Загрузить!', :data => { disable_with: false } %>
+<% end %>
